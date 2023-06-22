@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style1.css">
+    <script language="JavaScript"></script>
+</head>
+
+<body>
+    <nav>
+        <img src="logo1.png" alt="Logo">
+        <h1>Calculator</h1>
+    </nav>
+
+    <section class="calculator">
+            <table cellspacing=12 cellpading=8 class="tables">
+                <form name="Calci">
+                    <tr>
+                        <td colspan="3"><input type="text" name="inputBox" id="inputBox"></td>
+                        <td> <input type="button" value="Del" class="grey"
+                                onclick="Calci.inputBox.value=Calci.inputBox.value.substr(0,Calci.inputBox.value.length-1)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> <input type="button" value="1" class="darkBlue" onclick="Calci.inputBox.value+=1"> </td>
+                        <td> <input type="button" value="2" class="darkBlue" onclick="Calci.inputBox.value+=2"> </td>
+                        <td> <input type="button" value="3" class="darkBlue" onclick="Calci.inputBox.value+=3"> </td>
+                        <td> <input type="button" value="/" class="lightBlue" onclick="Calci.inputBox.value+='/'"> </td>
+                    </tr>
+                    <tr>
+                        <td> <input type="button" value="4" class="darkBlue" onclick="Calci.inputBox.value+=4"> </td>
+                        <td> <input type="button" value="5" class="darkBlue" onclick="Calci.inputBox.value+=5"> </td>
+                        <td> <input type="button" value="6" class="darkBlue" onclick="Calci.inputBox.value+=6"> </td>
+                        <td> <input type="button" value="-" class="lightBlue" onclick="Calci.inputBox.value+='-'"> </td>
+                    </tr>
+
+                    <tr>
+                        <td> <input type="button" value="7" class="darkBlue" onclick="Calci.inputBox.value+=7"> </td>
+                        <td> <input type="button" value="8" class="darkBlue" onclick="Calci.inputBox.value+=8"> </td>
+                        <td> <input type="button" value="9" class="darkBlue" onclick="Calci.inputBox.value+=9"> </td>
+                        <td> <input type="button" value="*" class="lightBlue" class="lightBlue" onclick="Calci.inputBox.value+='*'"> </td>
+                    </tr>
+
+                    <tr>
+                        <td> <input type="button" value="." class="lightBlue" onclick="Calci.inputBox.value+='.'"> </td>
+                        <td> <input type="button" value="0" class="darkBlue" onclick="Calci.inputBox.value+=0"> </td>
+                        <td> <input type="button" value="=" class="lightBlue" onclick="Calci.inputBox.value=eval(Calci.inputBox.value)">
+                        </td>
+                        <td> <input type="button" value="+" class="lightBlue" onclick="Calci.inputBox.value+='+'"> </td>
+                    </tr>
+                </form>
+            </table>
+    </section>
+</body>
+
+</html>
